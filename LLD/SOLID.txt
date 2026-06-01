@@ -1,0 +1,11 @@
+S - Single Responsibility Principle (SRP)
+O - Open/Close Principle (OCP)
+L - Liskov Substitution Principle (LSP)
+I - Interface Segregation Principle (ISP) 
+D - Dependency Inversion Principle (DIP)
+
+
+Single Responsibility Principle
+-A class should have only one reason to change, meaning it should have only one Responsibility.
+Example: A InvoiceGenerator class should only handle logic to generate the invoice.
+If we want to print it than it should be handle by Another class called InvoicePrinter.
