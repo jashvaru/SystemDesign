@@ -1,0 +1,57 @@
+Association
+Definition: A general relationship where one object refers to or talks to another (has-a). No ownership or lifecycle implication.
+Direction: unidirectional (A -> B) or bidirectional (A <-> B).
+UML: solid line; arrows optionally show navigability.
+
+Example (unidirectional):
+class Driver {
+    Car car; // association: Driver has a reference to Car
+}
+class Car { }
+
+Dependency
+Definition: A temporary "uses-a" relationship; class A depends on B if A uses B as a parameter, local variable, or return type.
+Lifetime: short — only during method execution or compile-time coupling.
+UML: dashed arrow from client to supplier.
+
+Example:
+class ReportGenerator {
+    void generate(DataSource ds) { // depends on DataSource
+        List<Record> r = ds.fetch();
+    }
+}
+interface DataSource { List<Record> fetch(); }
+
+Aggregation
+Definition: A weak whole-part relationship. The whole and parts can exist independently. Represents "has-a (shared)".
+Ownership: shared; part may belong to multiple wholes.
+UML: hollow diamond at the whole end.
+
+Example
+class Team {
+    List<Player> players; // aggregation: Team aggregates Players; players can exist independently
+}
+class Player { }
+
+Composition
+Definition: A strong whole-part relationship with ownership and lifecycle dependency: if the whole is destroyed, parts are too.
+Ownership: exclusive; parts usually created and destroyed with the whole.
+UML: filled (black) diamond at the whole end.
+
+Example
+class House {
+    private final List<Room> rooms = new ArrayList<>(); // composition: rooms belong to this House
+    House() { rooms.add(new Room("Kitchen")); }
+}
+class Room { Room(String name) { } }
+
+Inheritance (Generalization)
+Definition: "is-a" relationship; a subclass inherits behavior/state from a superclass.
+Use: reuse and polymorphism.
+UML: solid line with hollow triangle pointing to the parent.
+
+Example:
+class Animal { void eat() {} }
+class Dog extends Animal { void bark() {} } // Dog is-a Animal
+
+
