@@ -13,3 +13,10 @@ If we want to print it than it should be handle by Another class called InvoiceP
 Open/Close Principle
 -Software entities should be open for extention but close for modification
 -Example: Add a new payment method by creating a new class instead of modifying existing code.
+
+Liskov Substitution Principle
+-It states that the object of the superclass should be replaceable with the objects of the subclass without altering the correctness of the code.
+-Example: An interface bird with fly method is implemented by class Crow and class Penguin which is incorrect
+because now both the class will need to provide fly method implementation and penguin cannot fly (as part of 
+implementation we throw exception). Instead we should create two interface one Bird and another FlyingBird.
+Crow can implement both while penguin will implement only bird.
