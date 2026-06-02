@@ -20,3 +20,17 @@ Liskov Substitution Principle
 because now both the class will need to provide fly method implementation and penguin cannot fly (as part of 
 implementation we throw exception). Instead we should create two interface one Bird and another FlyingBird.
 Crow can implement both while penguin will implement only bird.
+
+Interface Segregation Principle
+-It ensures that the classes are not burdended with the method they do not need. It promotes better design by breaking large
+general-purpose interfaces into smaller, more specific ones.
+-Example: An interface Machine with have 3 methods print, scan and copy. Now we create a print class which only prints and we try to 
+implement Machine interface we will need to provide implementation of all three methods. Instead create 3 interfaces
+for print, scan and copy.
+
+Dependency Inversion Principle
+-It states that High level module should not be dependent on Low level modules.Both should depened on Abstraction.
+-Example: We have a Notification service class that is directly dependent on Email service class and SMS service class,
+it is bad because if I want to add Whatsapp service I need to make Notification service dependent on Whatsapp service.
+Instead I will create an Abstraction Notification Channel (basically an Interface), this interface will be implemented by Email, SMS and Whatsapp
+and Ill make Notification service dependent on Notification Channel.
