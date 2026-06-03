@@ -41,7 +41,8 @@ class Team {
 class Player { }
 
 Composition
-Definition: A strong whole-part relationship with ownership and lifecycle dependency: if the whole is destroyed, parts are too.
+Definition: A strong whole-part relationship with ownership and lifecycle dependency: if the whole is 
+destroyed, parts are too.
 Ownership: exclusive; parts usually created and destroyed with the whole.
 UML: filled (black) diamond at the whole end.
 House ♦──── Room
