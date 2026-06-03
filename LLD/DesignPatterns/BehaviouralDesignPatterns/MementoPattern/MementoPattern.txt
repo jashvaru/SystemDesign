@@ -1,0 +1,6 @@
+Memento Pattern
+This pattern capture the internal state of the object in a memento, allowing
+the object to restore its state later on without revealing internal details.
+
+Example Undo and Redo fucntionality
+Interview - Suppose you're designing a document editor.
