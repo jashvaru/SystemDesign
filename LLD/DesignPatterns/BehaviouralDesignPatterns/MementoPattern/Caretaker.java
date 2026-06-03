@@ -11,8 +11,8 @@ public class Caretaker {
 
     //It pop the Editor Memento from the stack and gets the top most editor Memento
     public void undoState(TextEditor textEditor) {
-        history.pop();
         if(!history.isEmpty()) {
+            history.pop();
             textEditor.restore(history.peek());
         }
     }
