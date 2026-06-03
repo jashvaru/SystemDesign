@@ -1,3 +1,22 @@
+Symbols
+Association
+Driver ────> Car
+
+Dependency
+ReportGenerator - - - -> DataSource
+
+Aggregation
+Team ◇──── Player
+
+Composition
+House ♦──── Room
+
+Inheritance
+Dog ────▷ Animal
+
+----------------------------------------------------------------------------------------------------------
+Description
+
 Association
 Definition: A general relationship where one object refers to or talks to another (has-a). 
 No ownership or lifecycle implication.
@@ -64,8 +83,8 @@ Example:
 class Animal { void eat() {} }
 class Dog extends Animal { void bark() {} } // Dog is-a Animal
 
-
-
+---------------------------------------------------------------------------------------------------------
+Interview Tips
 
 Question	                    Relationship
 "Uses temporarily?"	            Dependency
