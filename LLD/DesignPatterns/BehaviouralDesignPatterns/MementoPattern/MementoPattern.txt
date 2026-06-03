@@ -4,3 +4,15 @@ the object to restore its state later on without revealing internal details.
 
 Example Undo and Redo fucntionality
 Interview - Suppose you're designing a document editor.
+
+Components
+-Originator: The object whos states needs to be saved and restore (TextEditor)
+-Memento: Captures and stores the internal state of the Originator (EditorMemento)
+-Caretaker: Manages and stores the memento's, without modifying them (Caretaker)
+
+UML Diagram
+
+TextEditor - - - -> EditorMemento ────♦ Caretaker
+
+TextEditor dependence on EditorMemento to create & save a snapshot or undo & restore snapshot
+Caretaker manages snapshots of the EditorMemento, without Caretaker there are no snapshots to manage 
