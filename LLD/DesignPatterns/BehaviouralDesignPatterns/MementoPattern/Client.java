@@ -1,4 +1,4 @@
-public class TextEditorMain {
+public class Client {
 
     public static void main(String[] args) {
         TextEditor textEditor = new TextEditor();
