@@ -1,4 +1,4 @@
-package LLD.DesignPatterns.BehaviouralDesignPatterns.StratergyPattern;
+package LLD.DesignPatterns.BehaviouralDesignPatterns.StrategyPattern;
 
 public class Client {
     
