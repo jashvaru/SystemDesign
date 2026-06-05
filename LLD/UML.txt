@@ -27,7 +27,7 @@ Driver <────> Car
 
 Example (unidirectional):
 class Driver {
-    Car car; // association: Driver has a reference to Car
+    Car car; // association: Driver has a reference to Car. The Driver "Knows" how to driver car.
 }
 class Car { }
 
@@ -55,7 +55,7 @@ Team ◇──── Player
 
 Example
 class Team {
-    List<Player> players; // aggregation: Team aggregates Players; players can exist independently
+    List<Player> players; // aggregation: Team is "made up" of Players. players can exist independently
 }
 class Player { }
 
@@ -68,7 +68,7 @@ House ♦──── Room
 
 Example
 class House {
-    private final List<Room> rooms = new ArrayList<>(); // composition: rooms belong to this House
+    private final List<Room> rooms = new ArrayList<>(); // composition: Rooms "belong" to this House
     House() { rooms.add(new Room("Kitchen")); }
 }
 class Room { Room(String name) { } }
@@ -81,7 +81,7 @@ Dog ────▷ Animal
 
 Example:
 class Animal { void eat() {} }
-class Dog extends Animal { void bark() {} } // Dog is-a Animal
+class Dog extends Animal { void bark() {} } // Dog "is-a" Animal
 
 ---------------------------------------------------------------------------------------------------------
 Interview Tips
@@ -89,6 +89,6 @@ Interview Tips
 Question	                    Relationship
 "Uses temporarily?"	            Dependency
 "Knows about?"	                Association
-"Has-a, but independent?"	    Aggregation
+"Has-a(made up), but independent?"	    Aggregation
 "Owns and controls lifecycle?"	Composition
 "Is-a?"	                        Inheritance
