@@ -1,0 +1,14 @@
+Command Pattern: It Encapsulates action.
+Strategy Pattern: It chooses between alertnative implementation of the same action.
+
+RemoteControl
+      ↓
+    Command (Command pattern)
+      ↓
+TurnOnLightCommand
+      ↓
+     Light
+      ↓
+BrightnessStrategy (Strategy Pattern)
+      ↓
+Normal / Eco / Night
