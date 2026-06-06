@@ -1,0 +1,9 @@
+Problem: How to access elements in a collection without exposing its internal
+representation.
+
+Solution: The Iterator Pattern provides a way to traverse a collection without
+revealing its underlying structure, offering a uniform interface for traversal.
+
+Structure:
+-Iterator: Interface for traversing a collection.
+-Collection: Holds the elements and provides an iterator.
