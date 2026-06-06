@@ -1,0 +1,9 @@
+Problem: Different parts of an algorithm may need to vary in subclasses, but the
+overall structure should remain consistent.
+
+Solution: The Template Method Pattern defines the skeleton of an algorithm in a
+base class and lets subclasses override specific steps.
+
+Structure:
+-Abstract Class: Defines the algorithm skeleton.
+-Concrete Subclasses: Override specific steps of the algorithm.
