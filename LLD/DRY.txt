@@ -1,0 +1,16 @@
+The DRY principle stands for "Don't Repeat Yourself."
+
+It's a software development principle that encourages you to avoid duplicating code, logic, or knowledge in multiple places. Instead, you should have a single source of truth for each piece of functionality.
+
+Why DRY Matters
+When the same code appears in multiple places:
+Bugs are harder to fix because you must update every copy.
+Maintenance becomes more expensive.
+The codebase becomes harder to understand.
+Changes can introduce inconsistencies.
+
+DRY also applies to:
+Database schemas: Avoid storing the same information redundantly.
+Configuration files: Centralize shared settings.
+Documentation: Maintain information in one authoritative location.
+Business rules: Implement rules once and reuse them.
