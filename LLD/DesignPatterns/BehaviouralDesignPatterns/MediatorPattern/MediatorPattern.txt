@@ -1,0 +1,9 @@
+Mediator Pattern
+-Reduces Complexity: The mediator centralizes communication, reducing direct dependencies
+between objects.
+-Loose Coupling: Colleagues only interact with the mediator, making them easier to manage,
+extend, and maintain.
+-Single Responsibility: The mediator handles complex communication logic, allowing colleagues
+to focus on their own behavior.
+-Centralized Control: Changes to communication rules can be made in the mediator without
+affecting the colleagues.
