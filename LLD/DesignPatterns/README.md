@@ -7,3 +7,4 @@
 5. **Template Pattern** – Defines skeleton of functionality common steps in base class and lets subclass overrides specific steps
 6. **Iterator Pattern** – Provides a way to traverse collection without revealing its underlying structure.
 7. **State Pattern** – To change behaviour based on the state.
+8. **Mediator Pattern** – Instead of objects talking directly to each other, they talk to a central mediator.
