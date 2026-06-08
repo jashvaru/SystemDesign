@@ -1,3 +1,7 @@
+Factory Desing Pattern is a fundamental tool to reduce decoulping
+and centralize object creation logic, especially in a system that need
+to support multiple types of objects.
+
 Factory Class: The TransportFactory class contains the logic to
 create different types of transport based on the input string. This abstracts
 the creation logic and makes it easier to add or change transport types.
