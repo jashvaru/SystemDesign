@@ -6,7 +6,7 @@ public class AppSettings {
     private String dbURL;
     private String dbPassword;
     
-    public AppSettings() {
+    private AppSettings() {
         dbURL = "abcd";
         dbPassword = "1234";
     }
