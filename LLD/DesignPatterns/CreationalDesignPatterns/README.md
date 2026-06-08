@@ -1,0 +1,8 @@
+Purpose: Creational patterns are focused on object creation mechanisms, aiming
+to optimize the creation process while ensuring flexibility.
+
+Goal: They abstract the instantiation process to make systems more flexible and
+reusable.
+
+Problem They Solve: Prevent tight coupling between code and object creation logic,
+simplifying the management of new object creation, especially in complex systems.
