@@ -1,0 +1,10 @@
+Factory Class: The TransportFactory class contains the logic to
+create different types of transport based on the input string. This abstracts
+the creation logic and makes it easier to add or change transport types.
+
+Decoupling: The TransportService class (client) no longer needs to
+know the details of how Car, Bike, or Bus are created. It simply calls the
+factory method.
+
+Flexibility: Adding a new transport type (e.g., Truck) only requires
+modifying the factory, not the client code.
