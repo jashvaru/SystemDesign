@@ -9,3 +9,16 @@ entire board to be easily cloned with all its current state.
 By using the Prototype pattern, we decouple the complexity of cloning the board from
 the client, ensuring that each object knows how to clone itself, making the system
 flexible and easier to maintain.
+
+Benefits
+-Simplifies Object Creation: Instead of manually copying each object, the clone method
+in each object simplifies the creation of copies.
+-Avoids Subclassing: The pattern relies on delegation to the clone method, allowing the
+class itself to handle object creation, avoiding the need for subclassing.
+-Shallow or Deep Copy: Depending on the use case, you can either implement a shallow
+copy (copying references) or a deep copy (cloning objects) based on the specific
+requirements.
+-Efficient Creation: When creating objects with a complex structure or when performance
+is a concern, the Prototype pattern allows you to efficiently replicate objects.
+-Consistency: Ensures that all properties of the object are consistently copied, avoiding
+errors associated with manual copying.
