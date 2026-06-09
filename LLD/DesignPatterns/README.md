@@ -8,3 +8,8 @@
 6. **Iterator Pattern** – Provides a way to traverse collection without revealing its underlying structure.
 7. **State Pattern** – To change behaviour based on the state.
 8. **Mediator Pattern** – Instead of objects talking directly to each other, they talk to a central mediator.
+
+# Creational Design Patterns
+
+1. **Singleton Pattern** – To have single instance of a class
+2. **Factory Pattern** –  To reduce coulping and centralize object creation logic
