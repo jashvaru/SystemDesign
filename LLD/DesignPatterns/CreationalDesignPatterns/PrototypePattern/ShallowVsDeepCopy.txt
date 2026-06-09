@@ -1,0 +1,10 @@
+Shallow Copy: Creates a new object but does not clone the objects that the original object refers
+to.
+
+Deep Copy: Clones the original object and all the objects it refers to (nested objects)
+Example:
+
+-Shallow Copy: Cloning an object with references to other objects (only the outer object is copied).
+-Deep Copy: Cloning the entire object graph, including any objects the original refers to.
+
+"Shallow copy copies references; deep copy copies the actual objects behind those references"
