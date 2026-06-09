@@ -14,3 +14,4 @@
 1. **Singleton Pattern** – To have single instance of a class
 2. **Factory Pattern** –  To reduce coulping and centralize object creation logic
 3. **AbstractFactory Pattern** – To create families of related objects without specifying their concrete classes.
+3. **Builder Pattern** – To seperate construction of an object from its representation.
