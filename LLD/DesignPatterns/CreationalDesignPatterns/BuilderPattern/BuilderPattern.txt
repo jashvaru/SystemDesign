@@ -1,0 +1,5 @@
+Problem: When a class constructor has too many parameters, the Builder Pattern
+allows step-by-step construction of complex objects.
+
+Solution: Separates the construction of an object from its representation, offering a
+fluent interface for creating complex objects
