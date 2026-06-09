@@ -11,8 +11,11 @@ Team ◇──── Player
 Composition
 House ♦──── Room
 
-Inheritance
+Inheritance (extends)
 Dog ────▷ Animal
+
+Realization (implements)
+Implementation - - -▷ Interface
 
 ----------------------------------------------------------------------------------------------------------
 Description
@@ -29,7 +32,9 @@ Example (unidirectional):
 class Driver {
     Car car; // association: Driver has a reference to Car. The Driver "Knows" how to driver car.
 }
-class Car { }
+class Car { 
+
+}
 
 Dependency
 Definition: A temporary "uses-a" relationship; class A depends on B if A uses B as a parameter,
@@ -44,7 +49,9 @@ class ReportGenerator {
         List<Record> r = ds.fetch();
     }
 }
-interface DataSource { List<Record> fetch(); }
+interface DataSource { 
+    List<Record> fetch(); 
+}
 
 Aggregation
 Definition: A weak whole-part relationship. The whole and parts can exist independently. 
@@ -57,7 +64,9 @@ Example
 class Team {
     List<Player> players; // aggregation: Team is "made up" of Players. players can exist independently
 }
-class Player { }
+class Player { 
+
+}
 
 Composition
 Definition: A strong whole-part relationship with ownership and lifecycle dependency: if the whole is 
@@ -71,7 +80,11 @@ class House {
     private final List<Room> rooms = new ArrayList<>(); // composition: Rooms "belong" to this House
     House() { rooms.add(new Room("Kitchen")); }
 }
-class Room { Room(String name) { } }
+class Room { 
+    Room(String name) { 
+
+    } 
+}
 
 Inheritance (Generalization)
 Definition: "is-a" relationship; a subclass inherits behavior/state from a superclass.
@@ -80,8 +93,36 @@ UML: solid line with hollow triangle pointing to the parent.
 Dog ────▷ Animal
 
 Example:
-class Animal { void eat() {} }
-class Dog extends Animal { void bark() {} } // Dog "is-a" Animal
+class Animal { 
+    void eat() {
+
+    } 
+}
+class Dog extends Animal {   // Dog "is-a" Animal
+    void bark() {
+
+    } 
+}
+
+Interface (Realization)
+Definition: A class implements the contract defined by an interface.
+Use: Define behavior through abstractions while allowing multiple implementations.
+UML: dashed line with hollow triangle pointing to the interface.  
+UpiPayment - - -▷ PaymentStrategy
+
+Example:
+interface PaymentStrategy { 
+    void pay();
+}
+
+class UpiPayment implements PaymentStrategy {
+
+    @Override
+    public void pay() {
+        System.out.println("Paid via UPI");
+    }
+}
+
 
 ---------------------------------------------------------------------------------------------------------
 Interview Tips
