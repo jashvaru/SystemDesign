@@ -1,0 +1,11 @@
+Problem It Solves: Provides an interface for creating families of related objects without specifying their
+concrete classes.
+
+Structure:
+Abstract Factory: Interface for creating abstract products.
+Concrete Factory: Implements the abstract factory and creates concrete products.
+
+Using the Abstract Factory Patter, you create interfaces for each product (e.g., Button, ScrollBar, Window)
+and provide a family of concrete implementations for each theme (e.g., WindowsButton, MacOSButton, etc.).
+The Abstract Factory provides a way to create a suite of related objects without knowing the exact type of
+objects that will be created.
