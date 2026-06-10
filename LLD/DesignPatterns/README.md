@@ -16,3 +16,7 @@
 3. **AbstractFactory Pattern** – To create families of related objects without specifying their concrete classes.
 4. **Builder Pattern** – To seperate construction of an object from its representation.
 5. **Prototype Pattern** – To decouple the complexity of cloning from the client
+
+# Structural Design Patterns
+
+1. **Adaptar Pattern** – To bridge the gap between two incompatible class
