@@ -1,0 +1,15 @@
+-Problem: When two systems or components have incompatible interfaces, they cannot work together directly.
+-Solution: The Adapter Pattern bridges the gap by converting the interface of one class into another that 
+the client expects.
+
+Real-world analogy:
+A power adapter that allows a device with a US power plug to fit and work with a European power socket
+
+
+Benefits
+-Reusability: You can reuse existing code even when its interface is not
+compatible with the current system.
+-Flexibility: It helps integrate classes from different libraries or systems that
+were not designed to work together.
+-Decoupling: The Adapter decouples the client from the specific implementation
+of the Adaptee.
