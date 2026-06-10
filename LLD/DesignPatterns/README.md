@@ -20,3 +20,4 @@
 # Structural Design Patterns
 
 1. **Adaptar Pattern** – To bridge the gap between two incompatible class
+2. **Decorator Pattern** – To add new behavior or responsibilities to an object dynamically without modifying its existing code.
