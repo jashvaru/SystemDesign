@@ -21,4 +21,5 @@
 
 1. **Adaptar Pattern** – To bridge the gap between two incompatible class
 2. **Decorator Pattern** – To add new behavior or responsibilities to an object dynamically without modifying its existing code.
-2. **Proxy Pattern** – To provide a surrogate or placeholder for another object to control access to it.
+3. **Proxy Pattern** – To provide a surrogate or placeholder for another object to control access to it.
+4. **Composite Pattern** – To treat object or group of objects uniformly.
