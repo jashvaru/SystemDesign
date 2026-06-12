@@ -1,0 +1,9 @@
+Definition - To provide a simplified interface to a complex subsystem, 
+hiding internal complexity from the client.
+
+
+Solution
+The API Gateway acts as a facade, providing a unified interface to the client while 
+handling communication with the underlying microservices. 
+It simplifies client interactions, reduces network calls, and abstracts away the 
+complexity of dealing with multiple services.
