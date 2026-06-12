@@ -8,7 +8,7 @@ the pattern reduces the memory footprint.
 Example Problem:
 -Consider a graphics system rendering a large number of trees in a forest, 
 where each tree shares the same image but may vary by position or size.
--Position is unique for trees so its intrinsic property but image is common 
-to all trees so its extrinsic property.
--We can have a common reference for the img(extrinsic) instead of storing it for each 
+-Position is unique for trees so its extrinsic property but image is common 
+to all trees so its intrinsic property.
+-We can have a common reference for the img(intrinsic) instead of storing it for each 
 tree object.
