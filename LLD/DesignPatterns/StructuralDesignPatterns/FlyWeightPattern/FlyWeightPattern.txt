@@ -1,0 +1,14 @@
+Definition - minimizes memory usage by sharing common objects instead of creating duplicate copies.
+
+Problem: Creating many identical or similar objects in memory-heavy applications can lead to 
+excessive memory consumption.
+Solution: By sharing the common state among multiple objects (the flyweights), 
+the pattern reduces the memory footprint.
+
+Example Problem:
+-Consider a graphics system rendering a large number of trees in a forest, 
+where each tree shares the same image but may vary by position or size.
+-Position is unique for trees so its intrinsic property but image is common 
+to all trees so its extrinsic property.
+-We can have a common reference for the img(extrinsic) instead of storing it for each 
+tree object.
